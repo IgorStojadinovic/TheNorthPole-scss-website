@@ -1,0 +1,59 @@
+/*------------------------------------*\
+  #JOIN SECTION
+\*------------------------------------*/
+.join-section {
+  display: flex;
+
+  align-items: center;
+  height: 400px;
+  background-color: rgb(20, 20, 20);
+}
+.join-section__container {
+  height: 70%;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.join-section__container-title {
+  padding-top: 20px;
+  font-size: 23px;
+  padding-right: 5px;
+  padding-left: 5px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.join-section__container-secondary-heading {
+  cursor: pointer;
+  color: white;
+  letter-spacing: 1px;
+
+  text-transform: uppercase;
+}
+
+.join-section-container__buttons {
+  width: 50%;
+
+  color: white;
+}
+
+.button-list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  margin: 15px 0;
+  height: 50px;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  &:hover {
+    background-color: white;
+    color: black;
+  }
+}

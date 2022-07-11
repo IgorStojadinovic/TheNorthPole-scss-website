@@ -1,0 +1,62 @@
+/*------------------------------------*\
+  #NEW ARRIVALS SECTION
+\*------------------------------------*/
+
+.new-arrivals {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: $new-arrivals-bg-color;
+  @include xxl {
+    height: 650px;
+    flex-direction: row;
+  }
+}
+
+.new-arrivals__container-text {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  @include md {
+    font-size: 30px;
+  }
+
+  @include xxl {
+    height: 100%;
+  }
+}
+
+.new-arrivals__container-text-heading {
+  margin: 0;
+  text-transform: uppercase;
+  color: $new-arrivals__container-text-heading;
+  letter-spacing: 5px;
+}
+
+.new-arrivals__container-text-link {
+  text-decoration: none;
+  color: $new-arrivals__container-link-color;
+  text-transform: uppercase;
+  font-family: $h4-font;
+  font-weight: 100;
+}
+
+.new-arrivals__container-img {
+  height: 50%;
+  width: 100%;
+  object-fit: cover;
+  padding-bottom: 20px;
+
+  @include lg {
+    height: 100%;
+    padding-bottom: 0;
+  }
+  @include xxl {
+    height: 100%;
+    padding-bottom: 0;
+  }
+}

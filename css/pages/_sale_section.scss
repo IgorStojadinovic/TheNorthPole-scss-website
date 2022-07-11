@@ -1,0 +1,111 @@
+/*------------------------------------*\
+  #SALE SECTION
+\*------------------------------------*/
+
+.sale-section {
+  height: 1200px;
+  background-color: black;
+
+  @include md {
+    height: 1900px;
+  }
+
+  @include xxl {
+    height: 900px;
+  }
+}
+
+.sale-section__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.sale-section__container-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+
+  @include md {
+    font-size: 30px;
+  }
+}
+.sale-secation__container-text-main-heading {
+  text-transform: uppercase;
+  color: $sale-section-main-heading;
+  letter-spacing: 5px;
+}
+.sale-section__container-text-secondary {
+  text-transform: uppercase;
+  color: $sale-section-secondary-heading;
+  font-family: $h4-font;
+  font-weight: 100;
+  letter-spacing: 5px;
+}
+
+.sale-section__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0 1rem;
+  height: 80%;
+
+  @include xxl {
+    flex-direction: row;
+    height: 50%;
+  }
+}
+.sale-section__list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 30%;
+  text-align: center;
+
+  .sale-section__list-item-link {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    @include md {
+      align-items: center;
+    }
+  }
+
+  .sale-section__list-text {
+    text-transform: uppercase;
+    color: $sale-section-list-text-color;
+    letter-spacing: 2px;
+    height: 30%;
+    width: 100%;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include md {
+      font-size: 30px;
+    }
+  }
+
+  .sale-section__list-item-img {
+    height: 70%;
+    width: 100%;
+    object-fit: contain;
+
+    @include md {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  @include xxl {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

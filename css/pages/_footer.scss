@@ -1,0 +1,24 @@
+/*------------------------------------*\
+  #FOOTER SECTION
+\*------------------------------------*/
+.footer-section {
+  margin: 0;
+  background-color: $footer-bg-color;
+}
+
+.footer-section__list {
+  color: $footer-list-text-color;
+  padding: 1em;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-section__list-item {
+  cursor: pointer;
+  margin-bottom: 20px;
+  border-bottom: 1px solid $footer-list-bottom-border-color;
+  letter-spacing: 2px;
+}

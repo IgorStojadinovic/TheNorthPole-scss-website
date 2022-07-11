@@ -1,0 +1,111 @@
+/*------------------------------------*\
+  #CONTACT SECTION
+\*------------------------------------*/
+.contact-section {
+  height: 1000px;
+  background-color: $contact-section-bg-color;
+}
+.contact-section__container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  @include md {
+    align-items: center;
+  }
+  @include xxl {
+    flex-direction: row-reverse;
+  }
+}
+
+.contact-section__container-form-inputs {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1em 1em 1em;
+
+  @include xxl {
+    width: 50%;
+  }
+}
+.input-label {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-weight: 100;
+  color: $input-label-color;
+  font-size: 20px;
+  overflow: hidden;
+  text-transform: uppercase;
+}
+
+.contact-section__container-form-name-inputs {
+  color: $form-name-input-color;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-text,
+.input-email {
+  outline: none;
+  color: $input-color-text-email;
+  height: 40px;
+  background-color: $input-bg-color;
+  border: 1px solid $input-border-color;
+  font-size: 20px;
+}
+
+.contact-from-text-area {
+  outline: none;
+  color: $text-area-color;
+  background-color: $text-area-bg-color;
+  border: 1px solid $text-area-border-color;
+  font-size: 15px;
+}
+.submit-btn {
+  margin-top: 20px;
+  text-transform: uppercase;
+  color: $submit-btn-color;
+  letter-spacing: 5px;
+  background-color: $submit-btn-bg-color;
+  height: 50px;
+  border: 1px solid $submit-btn-border-color;
+  cursor: pointer;
+  &:hover {
+    background-color: $submit-hover-bg-color;
+    color: $submit-hover-text-color;
+  }
+}
+
+.contact-section__container-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 30%;
+  padding: 1em 1em 0 1em;
+  color: $contact-section__container-text-color;
+
+  @include md {
+    width: 70%;
+  }
+
+  @include xxl {
+    width: 40%;
+  }
+}
+.contact-section__container-text-title {
+  font-weight: 100;
+  text-transform: uppercase;
+  color: $contact-section__container-text-title-color;
+  letter-spacing: 5px;
+}
+.contact-section__container-text-paragraph {
+  font-weight: 100;
+  text-align: center;
+  text-transform: uppercase;
+  color: $contact-section__container-text-paragraph;
+  letter-spacing: 2px;
+}

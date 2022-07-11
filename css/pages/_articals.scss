@@ -1,0 +1,47 @@
+/*------------------------------------*\
+  #ARTICALS SECTION
+\*------------------------------------*/
+.articals-section {
+  height: 1100px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: black;
+
+  @include md {
+    height: 2000px;
+  }
+
+  @include lg {
+    flex-direction: row;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+  }
+  @include xxl {
+    flex-direction: row;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.articals-section__picture {
+  height: 350px;
+  width: 100%;
+  overflow: hidden;
+
+  @include md {
+    height: 30%;
+  }
+  @include md {
+    height: 100%;
+  }
+  @include xxl {
+    height: 100%;
+  }
+}
+.articals-section__picture-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}

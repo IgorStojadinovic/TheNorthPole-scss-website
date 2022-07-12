@@ -8,7 +8,7 @@
   height: 100vh;
   background-color: $new-arrivals-bg-color;
   @include xxl {
-    height: 650px;
+    height: 100vh;
     flex-direction: row;
   }
 }

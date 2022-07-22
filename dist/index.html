@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>TheNorthPole</title>
+  <script defer src="bundleb312c81d0efe077da2e9.js"></script></head>
+  <body>
+    <!--Navbar-->
+    <header class="header" id="home">
+      <nav class="navbar">
+        <div class="navbar-container">
+          <h1 class="navbar-container__title">THE<strong>NORTHPOLE</strong></h1>
+
+          <ul class="navbar-container__links">
+            <li class="navbar-container__links-list-item">
+              <a href="#home" class="navbar-container__links-list-item-link"
+                >Home</a
+              >
+            </li>
+            <li class="navbar-container__links-list-item">
+              <a href="#shop" class="navbar-container__links-list-item-link"
+                >Shop</a
+              >
+            </li>
+            <li class="navbar-container__links-list-item">
+              <a href="#about" class="navbar-container__links-list-item-link"
+                >About</a
+              >
+            </li>
+            <li class="navbar-container__links-list-item">
+              <a href="#forum" class="navbar-container__links-list-item-link"
+                >Forum</a
+              >
+            </li>
+            <li class="navbar-container__links-list-item">
+              <a href="#contact" class="navbar-container__links-list-item-link"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <input type="checkbox" id="checkbox-menu" class="nav-checkbox" />
+          <label for="checkbox-menu" class="mobile-navbar-icon">
+            <span class="hamburger-icon"></span
+          ></label>
+
+          <ul class="navbar-container__mobile-menu">
+            <li
+              class="navbar-container__mobile-links-list-item"
+              onclick="closemenu()"
+            >
+              <a
+                href="#home"
+                class="navbar-container__mobile-links-list-item-link"
+                >Home</a
+              >
+            </li>
+            <li
+              class="navbar-container__mobile-links-list-item"
+              onclick="closemenu()"
+            >
+              <a
+                href="#shop"
+                class="navbar-container__mobile-links-list-item-link"
+                >Shop</a
+              >
+            </li>
+            <li
+              class="navbar-container__mobile-links-list-item"
+              onclick="closemenu()"
+            >
+              <a
+                href="#about"
+                class="navbar-container__mobile-links-list-item-link"
+                >About</a
+              >
+            </li>
+            <li
+              class="navbar-container__mobile-links-list-item"
+              onclick="closemenu()"
+            >
+              <a
+                href="#forum"
+                class="navbar-container__mobile-links-list-item-link"
+                >Forum</a
+              >
+            </li>
+            <li
+              class="navbar-container__mobile-links-list-item"
+              onclick="closemenu()"
+            >
+              <a
+                href="#contact"
+                class="navbar-container__mobile-links-list-item-link"
+                >Contact</a
+              >
+            </li>
+          </ul>
+
+          <div class="navbar__container-icons">
+            <menu class="navbar__container-icons-left-side">
+              <i class="fas fa-bell social-icons"></i>
+              <i class="fas fa-user-circle social-icons"></i>
+              <i class="fas fa-angle-down social-icons"></i>
+              <i class="fas fa-shopping-cart social-icons"></i>
+            </menu>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--Hero Section-->
+    <section class="hero-section">
+      <figure class="hero-section__figure">
+        <picture class="hero-section__figure-picture-tag">
+          <img
+            src="hero.jpg"
+            alt="hero-bg-image"
+            class="hero-section__figure-image"
+          />
+        </picture>
+      </figure>
+
+      <div class="hero-section__title">
+        <h1 class="hero-section__title-heading">
+          Plan your adventure <br />
+          <a class="hero-section__title-main-link" href="#new-arrivals"
+            ><span class="link-text"
+              >Shop Now<i class="fas fa-chevron-down arrow-down-icon"></i
+            ></span>
+          </a>
+        </h1>
+      </div>
+    </section>
+
+    <!--New Arrivals Section-->
+    <section class="new-arrivals" id="new-arrivals">
+      <article class="new-arrivals__container-text">
+        <h1 class="new-arrivals__container-text-heading">New Arrivals</h1>
+        <a href="#" class="new-arrivals__container-text-link">Shop Now</a>
+      </article>
+
+      <img
+        src="new-arrivals.jpg"
+        alt="new-arrivals"
+        class="new-arrivals__container-img"
+      />
+    </section>
+
+    <!-- Articals Sections-->
+
+    <section class="articals-section">
+      <picture class="articals-section__picture"
+        ><img
+          src="backpacks-galery-img-1.jpg"
+          alt="backpack-1"
+          class="articals-section__picture-img"
+      /></picture>
+      <picture class="articals-section__picture"
+        ><img
+          src="backpacks-galery-img-3.jpg"
+          alt="backpack-2"
+          class="articals-section__picture-img"
+      /></picture>
+      <picture class="articals-section__picture">
+        <img
+          src="backpacks-galery-img-2.jpg"
+          alt="backpack-3"
+          class="articals-section__picture-img"
+      /></picture>
+    </section>
+
+    <!--Sale Section-->
+    <section class="sale-section" id="shop">
+      <div class="sale-section__container">
+        <article class="sale-section__container-text">
+          <h1 class="sale-secation__container-text-main-heading">
+            Now on sale
+          </h1>
+          <h4 class="sale-section__container-text-secondary">up to 50 % off</h4>
+        </article>
+        <ul class="sale-section__list">
+          <li class="sale-section__list-item">
+            <a href="#" class="sale-section__list-item-link"
+              ><img
+                src="backpack-shop-2.jpg"
+                alt="backpack-1"
+                class="sale-section__list-item-img"
+              />
+              <h1 class="sale-section__list-text">
+                Camo Backpack <br />
+                USD 40$
+              </h1></a
+            >
+          </li>
+          <li class="sale-section__list-item">
+            <a href="#" class="sale-section__list-item-link"
+              ><img
+                src="backpack-shop.jpg"
+                alt="backpack-2"
+                class="sale-section__list-item-img"
+              />
+              <h1 class="sale-section__list-text">
+                Canvas Backpack <br />
+                USD 70$
+              </h1></a
+            >
+          </li>
+          <li class="sale-section__list-item">
+            <a href="#" class="sale-section__list-item-link"
+              ><img
+                src="travel-pack-shop.jpg"
+                alt="backpack-3"
+                class="sale-section__list-item-img"
+              />
+              <h1 class="sale-section__list-text">
+                Tehnical pack <br />
+                USD 140$
+              </h1></a
+            >
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!--About Section-->
+    <section class="about-section" id="about">
+      <article class="about-section__content">
+        <h1 class="about-section__content-title">About us</h1>
+        <p class="about-section__content-paragraph">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Exercitationem doloribus temporibus aliquid libero blanditiis iusto
+          facilis deserunt perferendis aut laboriosam, perspiciatis aspernatur
+          placeat illo natus autem laborum officiis nam eveniet.
+        </p>
+      </article>
+      <img
+        src="about-section.jpg"
+        alt="about-section-image"
+        class="about-background-image"
+      />
+    </section>
+
+    <!--Contact Section-->
+    <section class="contact-section" id="contact">
+      <article class="contact-section__container">
+        <form class="contact-section__container-form-inputs" action="POST">
+          <div class="contact-section__container-form-name-inputs">
+            <label for="first-name" class="input-label">First Name *</label>
+            <input
+              type="text"
+              name="first-name"
+              id="first-name"
+              class="input-text"
+            />
+
+            <label for="last-name" class="input-label">Last Name *</label>
+            <input
+              type="text"
+              name="last-name"
+              id="last-name"
+              class="input-text"
+            />
+          </div>
+
+          <label for="email" class="input-label">Enter Your Email *</label>
+          <input type="email" name="email" id="email" class="input-email" />
+
+          <label for="text" class="input-label">Enter Your Subject</label>
+          <input type="text" name="text" id="text" class="input-text" />
+
+          <label for="message" class="input-label">Enter Your Message</label>
+          <textarea
+            class="contact-from-text-area"
+            name="message"
+            id=""
+            cols="30"
+            rows="10"
+          ></textarea>
+
+          <button type="submit" class="submit-btn">Send</button>
+        </form>
+
+        <article class="contact-section__container-text">
+          <h1 class="contact-section__container-text-title">Contact</h1>
+          <h4 class="contact-section__container-text-paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+            tenetur incidunt ullam perferendis veniam at enim ab labore facere
+            quas eveniet modi dolores fuga quibusdam aliquam, ut corporis
+            aperiam sed?
+          </h4>
+          <h4 class="contact-section__container-text-paragraph">
+            info@my-domain.com
+          </h4>
+          <h4 class="contact-section__container-text-paragraph">
+            Tel: 1-800-000-000
+          </h4>
+        </article>
+      </article>
+    </section>
+
+    <!--Join Section-->
+    <section class="join-section">
+      <article class="join-section__container">
+        <h1 class="join-section__container-title">Join our mailing list</h1>
+        <p class="join-section__container-secondary-heading">
+          And never miss an update
+        </p>
+
+        <article class="join-section-container__buttons">
+          <p>Enter your email here*</p>
+          <ul class="join-section-container__buttons-list">
+            <li><a href="#" class="button-list-item email">Email</a></li>
+            <li><a href="#" class="button-list-item sub">Subscribe Now</a></li>
+          </ul>
+        </article>
+      </article>
+    </section>
+
+    <!--Footer-->
+    <footer class="footer-section">
+      <ul class="footer-section__list">
+        <li class="footer-section__list-item">FAQ</li>
+        <li class="footer-section__list-item">FORUM</li>
+        <li class="footer-section__list-item">Shipping & Returns</li>
+        <li class="footer-section__list-item">Terms & Conditions</li>
+      </ul>
+    </footer>
+  </body>
+</html>
